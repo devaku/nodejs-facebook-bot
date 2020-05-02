@@ -1,4 +1,4 @@
-module.exports = function(app) {
+module.exports = function (app) {
     const controllerPath = '../api/controllers';
-    app.use('/', require(`${controllerPath}/homeController.js`).router);
+    app.use('/', require(`${controllerPath}/homecontroller.js`).router);
 };

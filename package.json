@@ -1,24 +1,39 @@
 {
-    "name": "song-lister",
+    "name": "nodejs-facebook-bot",
     "version": "1.0.0",
-    "description": "Program that integrates with Spotify and Twitter to get and post songs chosen by the user.",
+    "description": "A simple NodeJS Facebook Bot application",
     "main": "app.js",
     "scripts": {
         "heroku-postbuild": "npm run install-server",
         "install-server": "npm install",
         "debug": "nodemon app.js --exec \"npm run lint && node\"",
-        "lint": "node_modules/.bin/eslint **/*.js"
+        "debug-nolint": "nodemon app.js",
+        "lint": "eslint **/*.js"
     },
     "author": "Alejo Kim Uy",
     "license": "ISC",
     "dependencies": {
         "ejs": "^3.0.2",
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "node-fetch": "^2.6.0"
     },
     "devDependencies": {
         "dotenv": "^8.2.0",
         "eslint": "^6.8.0",
         "morgan": "^1.10.0",
         "nodemon": "^2.0.2"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/devaku/nodejs-facebook-bot"
+    },
+    "bugs": {
+        "url": "https://github.com/devaku/nodejs-facebook-bot/issues"
+    },
+    "homepage": "https://github.com/devaku/nodejs-facebook-bot#readme",
+    "keywords": [
+        "nodejs",
+        "facebook",
+        "bot"
+    ]
 }
